@@ -1,72 +1,77 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <!-- Include aos CSS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
-  </head>
-  <header>
-
-  <nav class="navbar navbar-expand-lg fixed-top bg-warning">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+ <!-- Include aos CSS -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+ 
+  <title>Arshi</title>
+  
+</head>
+<body>
+<!-- --------------navbar start here----------------- -->
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top bg-warning text-black container-fluid">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img width="55px" src="img/logo.png" alt="Best IT Company">
+        <img width="40px" src="img/logo.png" alt="Best IT Company">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-          <li class="nav-item px-3">
+      <div class="collapse navbar-collapse flex-grow-1" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item px-2">
             <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
 
-          <li class="nav-item px-3">
+          <li class="nav-item px-2">
             <a class="nav-link " aria-current="page" href="#about">About Us</a>
           </li>
 
-          <li class="nav-item px-3">
+          <li class="nav-item px-2">
             <a class="nav-link " aria-current="page" href="#contact">Contact Us</a>
           </li>
 
-          <li class="nav-item px-3">
+          <li class="nav-item px-2">
             <a class="nav-link " aria-current="page" href="#team">Our Team</a>
           </li>
-          <li class="nav-item dropdown px-3">
+
+          <li class="nav-item dropdown px-2">
             <a class="nav-link dropdown-toggle" href="#service" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Service
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#service">Web Design</a></li>
               <li><a class="dropdown-item" href="#service">Web Development</a></li>
-              <li><a class="dropdown-item" href="#service">Web Research</a></li>
-              <li><a class="dropdown-item" href="#service">Web Analytics</a></li>
-              <li><a class="dropdown-item" href="#service"> SEO</a></li>
-              <li><a class="dropdown-item" href="#service">Web Development</a></li>
-              <li><a class="dropdown-item" href="#service">Mobile App</a></li>
-              <li><a class="dropdown-item" href="#service">IoT </a></li>
-
             </ul>
           </li>
-         </ul>
+          <li class="nav-item px-2">
+            <a class="nav-link " aria-current="page" href="#faq">FAQ</a>
+          </li>
+        </ul>
         <div class="d-flex">
-          <a href="" class=""><img src="img/facebook.png" alt=""></a> &nbsp;&nbsp;
-          <a href="" class=""><img src="img/skype.png" alt=""></a> &nbsp;&nbsp;
-          <a href="" class=""><img src="img/linkedin.png" alt=""></a>
-          <a href="" class=""><img src="img/youtube.png" alt=""></a>
+          <a href="" class="me-2"><img src="img/nav-icon/facebook.png" alt=""></a>
+          <a href="" class="me-2"><img src="img/nav-icon/skype.png" alt=""></a>
+          <a href="" class="me-2"><img src="img/nav-icon/linkedin.png" alt=""></a>
         </div>
       </div>
     </div>
   </nav>
-
 </header>
 
-  <!-- --------------slider-------------->
-  <div id="carouselExample" class="carousel slide">
+  <!-- ------------navbar end ------------------- -->
+  <!-- ----------sliderstart here----------------- -->
+  <div id="carouselExampleIndicators" class="carousel slide ">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="img/g1.jpg" class="d-block w-100" alt="...">
@@ -78,177 +83,93 @@
         <img src="img/g3.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
-  
-  <section id="about" class="container-fluid py-5"data-aos="flip-up">
-    <div class="container">
-  
-      <div class="row"> 
-        <div class="col-12 col-lg-5 ">
-          <img class="border border-light img-fluid" class="img-fluid" src="img/about.png" alt="Company Image">
-        </div>
-        <div class="col-12 col-lg-7">
-          <h1 class="display-6"><b>About US</b></h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, expedita. Quam iure totam dicta deleniti, est nulla tenetur eius dolor similique voluptatibus doloremque nemo molestias harum consequuntur quis sint, quia ab deserunt fugit, ratione error consectetur omnis odit quae
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, expedita. Quam iure totam dicta deleniti, est nulla tenetur eius dolor similique voluptatibus  odit quae
-          </p>
-          <div class="py-1">
-            <h3 class="display-6">Follow Us</h3>
-            <a href="" class=""><img src="img/facebook.png" alt=""></a> &nbsp;&nbsp;
-            <a href="" class=""><img src="img/skype.png" alt=""></a> &nbsp;&nbsp;
-            <a href="" class=""><img src="img/linkedin.png" alt=""></a> &nbsp;&nbsp;
-            <a href="" class=""><img src="img/youtube.png" alt=""></a> &nbsp;&nbsp;
-          </div>
+  <!-- ---------------slider end------------ -->
+  <!-- ---------------about-------------- -->
+  <section id="about" class="container-fluid overflow-hidden">
+    <div class="row py-3" data-aos="zoom-out">
+      <div class="col-12 col-lg-5">
+        <img class="border border-light img-fluid" src="img/about.png" alt="Company Image">
+      </div>
+      <div class="col-12 col-lg-7 over">
+        <h1 class="display-6"><b>About US</b></h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, expedita. Quam iure totam dicta deleniti, est nulla tenetur eius dolor similique voluptatibus doloremque nemo molestias harum consequuntur quis sint, quia ab deserunt fugit, ratione error consectetur omnis odit quae
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, expedita. Quam iure totam dicta deleniti, est nulla tenetur eius dolor similique voluptatibus odit quae
+        </p>
+        <div class="py-1">
+          <h3 class="display-6">Follow Us</h3>
+          <a href="" class=""><img src="img/facebook.png" alt=""></a> &nbsp;&nbsp;
+          <a href="" class=""><img src="img/skype.png" alt=""></a> &nbsp;&nbsp;
+          <a href="" class=""><img src="img/linkedin.png" alt=""></a> &nbsp;&nbsp;
+          <a href="" class=""><img src="img/youtube.png" alt=""></a> &nbsp;&nbsp;
         </div>
       </div>
     </div>
   </section>
+  
 
-
-  <!-- Page content-->
-    
-      <section class="bg-black position-relative py-5 text-white"data-aos="zoom-in">
-
-        <div class="d-none d-dark-mode-block position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255,255,255, .02);"></div>
-        <div class="container dark-mode position-relative zindex-2 py-5 mb-4 mb-sm-5">
-          <div class="row pb-5 mb-2 mb-sm-0 mb-lg-3">
-            <div class="col-lg-10 col-xl-9">
-             
-                <h1 class="display-2 pb-2 pb-sm-3" style="color: red;">We believe in the success of every business</h1>
-                <ul class="list-unstyled d-flex flex-wrap mb-0">
-                <li class="d-flex py-1 me-4 text-warning "><i class="ai-check-alt  lead me-2 "></i>Forecasting and recommendations</li>
-                <li class="d-flex py-1 me-4 text-warning"><i class="ai-check-alt  lead me-2"></i>Identification of patterns, analysis</li>
-                <li class="d-flex py-1 text-warning"><i class="ai-check-alt lead me-2 "></i>Segmentation by various methods</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-       <!-- About-->
-       <section class="container pt-5 mt-1 mt-sm-2 mt-xl-4 mt-xxl-5"data-aos="zoom-in">
-        <div class="row align-items-center pt-2 pt-sm-3 pt-md-4 pt-lg-5 mt-xl-2 mt-xxl-3">
-          <div class="col-md-6 col-xl-5 pb-3 pb-md-0 mb-4 mb-md-0">
-            <div class="ratio ratio-1x1 d-flex align-items-center position-relative rounded-circle overflow-hidden bg-size-cover mx-auto" style="max-width: 530px; background-image: url(img/g1.jpg);">
-              <div class="bg-black position-absolute top-0 start-0 w-100 h-100 opacity-50"></div>
-              <div class="dark-mode position-relative zindex-2 p-4">
-                <div class="text-center mx-auto" style="max-width: 275px;"><span class="d-block fs-sm text-uppercase mb-3">How we work</span>
-                  <h2 class="display-6 mb-0">The key to success</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-xl-5 offset-xl-1">
-            <div class="ps-md-4 ps-xl-0">
-              <div class="steps steps-hoverable">
-                <div class="step py-3 py-xl-4">
-                  <div class="step-number">
-                    <div class="step-number-inner">01</div>
-                  </div>
-                  <div class="step-body">
-                    <h3 class="h5 pb-1 mb-2">Formulation of the problem</h3>
-                    <p class="mb-0">Find aute irure dolor in reprehenderi voluptate velit esse cillum dolore eu fugiat nulla pariatur am luctus.</p>
-                  </div>
-                </div>
-                <div class="step py-3 py-xl-4">
-                  <div class="step-number">
-                    <div class="step-number-inner">02</div>
-                  </div>
-                  <div class="step-body">
-                    <h3 class="h5 pb-1 mb-2">Assessment of the current state</h3>
-                    <p class="mb-0">Risus quam quis at euismod vitae dui elementu eu in diam malesuada mattis ut urna integer erat nisi nibh.</p>
-                  </div>
-                </div>
-                <div class="step py-3 py-xl-4">
-                  <div class="step-number">
-                    <div class="step-number-inner">03</div>
-                  </div>
-                  <div class="step-body">
-                    <h3 class="h5 pb-1 mb-2">Business plan creation</h3>
-                    <p class="mb-0">A sagittis morbi massa venenatis, egestas viverra ac elit nibh tellus nisi in nec tellus mauris feugiat gravida.</p>
-                  </div>
-                </div>
-                <div class="step py-3 py-xl-4">
-                  <div class="step-number">
-                    <div class="step-number-inner">04</div>
-                  </div>
-                  <div class="step-body">
-                    <h3 class="h5 pb-1 mb-2">Strategy implementation</h3>
-                    <p class="mb-0">Elementum purus, nisl ipsum sit. Amet sit praesent proin sit cras. Leo sed praesent nunc  vel nec risus.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-<!-- ------------Our Services---------- -->
-
-
-<section id="service" class="bg-warning" >
-  <div class="container py-3 " >
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="display-6 "><b>Our Service</b></h2>
-        <p class="text-body-emphasis">Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Nisi, consequuntur!</p>
-      </div>
-
-      <div class="col-12 text-center">
-        <img  src="img/star.png" alt="star">
-        <img  src="img/star.png" alt="star">
-        <img  src="img/star.png" alt="star">
-        <img  src="img/star.png" alt="star">
-        <img  src="img/star.png" alt="star">
-      </div>
+  <!-- -----------------our services----------------- -->
+<section id="service" class="bg-warning overflow-hidden">
+  <div class="container py-3">
+    <div class="col-12 text-center">
+      <h2 class="display-6"><b>Our Service</b></h2>
+      <p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Nisi, consequuntur!</p>
     </div>
-
-    <div class="row py-5">
-
-      <div class="col-md-6 col-12 col-lg-3 mb-4" data-aos="fade-up"
-  data-aos-duration="3000">
+  </div>
+  <div class="row ">
+    <div class="col-12 text-center">
+      <img src="img/star.png" alt="star">
+      <img src="img/star.png" alt="star">
+      <img src="img/star.png" alt="star">
+      <img src="img/star.png" alt="star">
+      <img src="img/star.png" alt="star">
+    </div>
+  </div>
+  <div class="container py-5 overflow-hidden">
+    <div class="row justify-content-center mx-auto" data-aos="fade-up" data-aos-duration="3000">
+      <div class="col-md-6 col-lg-3 mb-4">
         <div class="border p-3">
           <div class="text-center">
-            <img width="128px"  src="img/service (1).png" alt="">
+            <img class="img-fluid" src="img/service (1).png" alt="">
           </div>
           <div class="text-center">
-            <h5 class="text-uppercase py-2">Web Desing</h5>
+            <h5 class="text-uppercase py-2">Web Design</h5>
             <p class="">
-              amet doloribus corrupti debitis neque reiciendis eos explicabo, illum numquam? Praesentium.
+            amet doloribus corrupti debitis neque reiciendis eos explicabo, illum numquam? Praesentium.
             </p>
-            <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark">Get a Quote</button>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-dark">Register now</button>
           </div>
         </div>
       </div>
       
-      <div class="col-md-6 col-12 col-lg-3 mb-4"data-aos="fade-up"
-      data-aos-duration="3000">
+      <div class="col-md-6 col-12 col-lg-3 mb-4">
         <div class="border p-3">
           <div class="text-center">
-            <img width="128px"  src="img/service (2).png" alt="">
+            <img width="128px" src="img/service (2).png" alt="">
           </div>
           <div class="text-center">
             <h5 class="text-uppercase py-2">Web Development</h5>
             <p class="">
-              amet doloribus corrupti debitis neque reiciendis eos explicabo, illum numquam? Praesentium.
+            amet doloribus corrupti debitis neque reiciendis eos explicabo, illum numquam? Praesentium.
             </p>
-            <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark">Get a Quote</button>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-dark">Register now</button>
           </div>
         </div>
       </div>
+      
 
-      <div class="col-md-6 col-12 col-lg-3 mb-4"data-aos="fade-up"
-      data-aos-duration="3000">
+      <div class="col-md-6 col-12 col-lg-3 mb-4">
         <div class="border p-3">
           <div class="text-center">
             <img width="128px"  src="img/service (3).png" alt="">
@@ -258,13 +179,12 @@
             <p class="">
               amet doloribus corrupti debitis neque reiciendis eos explicabo, illum numquam? Praesentium.
             </p>
-            <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark">Get a Quote</button>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark">Register now</button>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-12 col-lg-3 mb-4"data-aos="fade-up"
-      data-aos-duration="3000">
+      <div class="col-md-6 col-12 col-lg-3 mb-4">
         <div class="border p-3">
           <div class="text-center">
             <img width="128px"  src="img/service (4).png" alt="">
@@ -274,12 +194,11 @@
             <p class="">
               amet doloribus corrupti debitis neque reiciendis eos explicabo, illum numquam? Praesentium.
             </p>
-            <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark">Get a Quote</button>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark">Register now</button>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-12 col-lg-3 mb-4 mb-lg-0"data-aos="fade-up"
-      data-aos-duration="3000">
+      <div class="col-md-6 col-12 col-lg-3 mb-4 mb-lg-0">
         <div class="border p-3">
           <div class="text-center">
             <img width="128px"  src="img/service (5).png" alt="">
@@ -289,13 +208,12 @@
             <p class="">
               amet doloribus corrupti debitis neque reiciendis eos explicabo, illum numquam? Praesentium.
             </p>
-            <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark">Get a Quote</button>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark">Register now</button>
           </div>
         </div>
       </div>
       <div class="col-md-6 col-12 col-lg-3 mb-4 mb-lg-0">
-        <div class="border p-3"data-aos="fade-up"
-        data-aos-duration="3000">
+        <div class="border p-3">
           <div class="text-center">
             <img width="128px"  src="img/service (6).png" alt="">
           </div>
@@ -304,13 +222,12 @@
             <p class="">
               amet doloribus corrupti debitis neque reiciendis eos explicabo, illum numquam? Praesentium.
             </p>
-            <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark">Get a Quote</button>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark">Register now</button>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-12 col-lg-3 mb-4 mb-lg-0"data-aos="fade-up"
-      data-aos-duration="3000">
+      <div class="col-md-6 col-12 col-lg-3 mb-4 mb-lg-0">
         <div class="border p-3">
           <div class="text-center">
             <img width="128px"  src="img/service (7).png" alt="">
@@ -320,13 +237,12 @@
             <p class="">
               amet doloribus corrupti debitis neque reiciendis eos explicabo, illum numquam? Praesentium.
             </p>
-            <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark">Get a Quote</button>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark">Register now</button>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-12 col-lg-3 mb-4 mb-lg-0"data-aos="fade-up"
-      data-aos-duration="3000">
+      <div class="col-md-6 col-12 col-lg-3 mb-4 mb-lg-0">
         <div class="border p-3">
           <div class="text-center">
             <img width="128px"  src="img/service (8).png" alt="">
@@ -336,26 +252,38 @@
             <p class="">
               amet doloribus corrupti debitis neque reiciendis eos explicabo, illum numquam? Praesentium.
             </p>
-            <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark">Get a Quote</button>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark">Register now</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-
-<!-- ------------------Team---------------- -->
-
-<section id="team" class=" container py-3"data-aos="zoom-in-up">
-  <div class="row py-5">
-  
+<!-- Page content-->
+<section class="position-relative py-5 text-white bg-dark overflow-hidden"data-aos="flip-up">
+  <div class="d-none d-dark-mode-block position-absolute top-0 start-0 w-100 h-100 " style="background-color: rgba(255,255,255, .02);"></div>
+  <div class="container dark-mode position-relative zindex-2 py-5 mb-4 mb-sm-5">
+    <div class="row pb-5 mb-2 mb-sm-0 mb-lg-3">
+      <div class="col-lg-10 col-xl-9">
+        <h1 class="display-2 pb-2 pb-sm-3 animate__animated animate__zoomIn" style="color: red; word-wrap: break-word;">We believe in the success of every business</h1>
+        <ul class="list-unstyled d-flex flex-wrap mb-0">
+          <li class="d-flex py-1 me-4 text-warning"><i class="ai-check-alt lead me-2"></i>Forecasting and recommendations</li>
+          <li class="d-flex py-1 me-4 text-warning"><i class="ai-check-alt lead me-2"></i>Identification of patterns, analysis</li>
+          <li class="d-flex py-1 text-warning"><i class="ai-check-alt lead me-2"></i>Segmentation by various methods</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ----------------our team-------------- -->
+<section id="team" class="container py-3 overflow-hidden">
+  <div class="row"data-aos="flip-up">
     <div class="col-12 text-center">
-      <h2 class="display-6 "><b>Meet Our Team</b></h2>
+      <h2 class="display-6"><b>Meet our Team</b></h2>
       <p class="">Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Nisi, consequuntur!</p>
     </div>
-    <div class="col-12 text-center ">
-      <img  src="img/star.png" alt="star" >
+    <div class="col-12 text-center">
+      <img  src="img/star.png" alt="star">
       <img  src="img/star.png" alt="star">
       <img  src="img/star.png" alt="star">
       <img  src="img/star.png" alt="star">
@@ -364,13 +292,13 @@
   </div>
 
   <div class="row pt-5">
-    <div class="col-12 col-lg-10 offset-lg-1"data-aos="zoom-out">
+    <div class="col-12 col-lg-10 offset-lg-1">
       <div class="row">
 
-        <div class="col-12 col-lg-4 text-center mb-4 mb-lg-0 ">
-          <div class="card" >
-            <img class="card-img-top" src="img/ba5.jpg" alt="Card image cap">
-            <div class="card-body bg-warning">
+        <div class="col-12 col-lg-4 text-center mb-4 mb-lg-0">
+          <div class="card" data-aos="flip-up">
+            <img class="card-img-top" src="img/team-1.png" alt="Card image cap">
+            <div class="card-body">
              <h4 class="py-2 pb-0"><i>M.K. Tuktuki</i></h4>
              <h5>Web Developer</h5>
              <div class="py-3">
@@ -382,11 +310,11 @@
          </div>
        </div>
 
-       <div class="col-12 col-lg-4 text-center mb-4 mb-lg-0 "data-aos="zoom-out">
-        <div class="card" >
-          <img class="card-img-top" src="img/ba6.jpg" alt="Card image cap">
-          <div class="card-body bg-warning">
-           <h4 class="py-2 pb-0 "><i>M.L. Pultusi</i></h4>
+       <div class="col-12 col-lg-4 text-center mb-4 mb-lg-0">
+        <div class="card" data-aos="flip-up">
+          <img class="card-img-top" src="img/team-2.png" alt="Card image cap">
+          <div class="card-body">
+           <h4 class="py-2 pb-0"><i>M.L. Pultusi</i></h4>
            <h5>Web Developer</h5>
            <div class="py-3">
              <a class="btn   text-light" href=""><img src="img/youtube.png" alt=""></a>
@@ -397,10 +325,10 @@
        </div>
      </div>
 
-     <div class="col-12 col-lg-4 text-center mb-4 mb-lg-0 "data-aos="zoom-out">
-      <div class="card" >
-        <img class="card-img-top" src="img/ba7.jpg" alt="Card image cap">
-        <div class="card-body bg-warning">
+     <div class="col-12 col-lg-4 text-center mb-4 mb-lg-0">
+      <div class="card" data-aos="flip-up">
+        <img class="card-img-top" src="img/team-3.png" alt="Card image cap">
+        <div class="card-body">
          <h4 class="py-2 pb-0"><i>L.T Tuntuni</i></h4>
          <h5>Web Developer</h5>
          <div class="py-3">
@@ -416,9 +344,114 @@
 </div>
 </section>
 
-<!-- ----contact-------- -->
-<section id="contact" class="bg-warning py-3" data-aos="flip-up">
-  <div class="container">
+
+
+<!-- ------------FAQ-------------- -->
+
+<section id="faq" class="container py-3 overflow-hidden">
+  <div class="row py-5" data-aos="zoom-out">
+    <div class="col-12 text-center"data-aos="zoom-out">
+      <h2 class="display-6 "><b>Frequently Asked Questions</b></h2>
+      <p class="">Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Nisi, consequuntur!</p>
+    </div>
+    <div class="col-12 text-center">
+      <img  src="img/star.png" alt="star">
+      <img  src="img/star.png" alt="star">
+      <img  src="img/star.png" alt="star">
+      <img  src="img/star.png" alt="star">
+      <img  src="img/star.png" alt="star">
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="col-12 col-lg-6"data-aos="fade-up"
+    data-aos-duration="3000">
+      <div class="accordion" id="accordion_1">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading_1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_1" aria-expanded="true" aria-controls="collapse_1">
+              Whay We Are Best?
+            </button>
+          </h2>
+          <div id="collapse_1" class="accordion-collapse collapse show" aria-labelledby="heading_1" data-bs-parent="#accordion_1">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading_2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
+              How We Build Website?
+            </button>
+          </h2>
+          <div id="collapse_2" class="accordion-collapse collapse" aria-labelledby="heading_2" data-bs-parent="#accordion_1">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading_3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_3" aria-expanded="false" aria-controls="collapse_3">
+              How long we take to build?
+            </button>
+          </h2>
+          <div id="collapse_3" class="accordion-collapse collapse" aria-labelledby="heading_3" data-bs-parent="#accordion_1">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <div class="col-12 col-lg-6"data-aos="fade-up"
+    data-aos-duration="3000">
+      <div class="accordion" id="accordion_2">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading_4">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_4" aria-expanded="true" aria-controls="collapse_4">
+              This is a question?
+            </button>
+          </h2>
+          <div id="collapse_4" class="accordion-collapse collapse show" aria-labelledby="heading_4" data-bs-parent="#accordion_2">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading_5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+             This is a question?
+           </button>
+         </h2>
+         <div id="collapse_5" class="accordion-collapse collapse" aria-labelledby="heading_5" data-bs-parent="#accordion_2">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading_6">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_6" aria-expanded="false" aria-controls="collapse_6">
+            This is a question?
+          </button>
+        </h2>
+        <div id="collapse_6" class="accordion-collapse collapse" aria-labelledby="heading_6" data-bs-parent="#accordion_2">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+</section>
+<!-- -----------contact us---------------- -->
+<section id="contact" class="bg-warning py-3">
+  <div class="container"data-aos="flip-up">
     <div class="row py-5">
       <div class="col-12 text-center">
         <h2 class="display-6 "><b>Contact Us</b></h2>
@@ -451,7 +484,7 @@
               <textarea required class="form-control rounded-0" placeholder="Leave a comment here" id="floatingTextarea" cols="30" rows="4" ></textarea>
             </div>
             <div class="mt-3">
-              <button class="btn btn-secondary w-100 rounded-0" type="submit">Send</button>
+              <button class="btn btn-dark w-100 rounded-0" type="submit">Send</button>
             </div>
           </form>
         </div>
@@ -459,8 +492,8 @@
     </div>
   </div>
 </section>
-
-<footer class="py-5 bg-black text-white" data-aos="zoom-in-down">
+<!-- -----------footer------------ -->
+<footer class="py-5 bg-dark text-white"data-aos="zoom-in-down">
   <div class="container">
     <div class="row pb-5">
       <div class="col-12 text-center">
@@ -487,11 +520,11 @@
   </div>
   <div class="row">
     <div class="col-12">
-      <p class="text-center m-0 text-secondary">CopyRight &copy;Irshad Gujjar</p>
+      <p class="text-center m-0 text-secondary">CopyRight &copy; Irshad Yousuf</p>
     </div>
   </div>
 </div>
-</footer> 
+</footer>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -499,7 +532,7 @@
     <div class="modal-content">
       <form action="">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Get a Quote</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Register now</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -538,20 +571,18 @@
     </div>
   </div>
 </div>
-</section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-   <!-- Include Bootstrap JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
-<!-- Include AOS JS -->
+
+<!-- ------------scripts-------------- -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <!-- Include AOS JS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- Initialize AOS -->
 <script>
   AOS.init();
 </script>
- 
 </body>
 </html>
