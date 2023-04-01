@@ -15,7 +15,7 @@
 <body>
 <!-- --------------navbar start here----------------- -->
 <header>
-  <nav class="navbar navbar-expand-lg fixed-top bg-warning text-black container-fluid">
+  <nav class="navbar navbar-expand-lg fixed-top bg-warning container-fluid">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img width="40px" src="img/logo.png" alt="Best IT Company">
@@ -26,32 +26,38 @@
       <div class="collapse navbar-collapse flex-grow-1" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item px-2">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link active text-dark" aria-current="page" href="#home"><b>Home</b></a>
           </li>
 
           <li class="nav-item px-2">
-            <a class="nav-link " aria-current="page" href="#about">About Us</a>
+            <a class="nav-link text-dark" aria-current="page" href="#about"><b>About Us</b></a>
           </li>
 
           <li class="nav-item px-2">
-            <a class="nav-link " aria-current="page" href="#contact">Contact Us</a>
+            <a class="nav-link text-dark" aria-current="page" href="#contact"><b>Contact Us</b></a>
           </li>
 
           <li class="nav-item px-2">
-            <a class="nav-link " aria-current="page" href="#team">Our Team</a>
+            <a class="nav-link text-dark" aria-current="page" href="#team"><b>Our Team</b></a>
           </li>
 
           <li class="nav-item dropdown px-2">
-            <a class="nav-link dropdown-toggle" href="#service" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Service
+            <a class="nav-link dropdown-toggle text-dark" href="#service" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             <b>Services</b>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#service">Web Design</a></li>
               <li><a class="dropdown-item" href="#service">Web Development</a></li>
+              <li><a class="dropdown-item" href="#service">Web Research</a></li>
+              <li><a class="dropdown-item" href="#service">Web Analytics</a></li>
+              <li><a class="dropdown-item" href="#service">SEO</a></li>
+              <li><a class="dropdown-item" href="#service">Web Development</a></li>
+              <li><a class="dropdown-item" href="#service">Mobile App</a></li>
+              <li><a class="dropdown-item" href="#service"></a></li>
             </ul>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link " aria-current="page" href="#faq">FAQ</a>
+            <a class="nav-link text-dark" aria-current="page" href="#faq"><b>Home</b></a>
           </li>
         </ul>
         <div class="d-flex">
@@ -64,6 +70,7 @@
   </nav>
 </header>
 
+<body class="overflow-x:hidden">
   <!-- ------------navbar end ------------------- -->
   <!-- ----------sliderstart here----------------- -->
   <div id="carouselExampleIndicators" class="carousel slide ">
@@ -94,8 +101,8 @@
   </div>
   <!-- ---------------slider end------------ -->
   <!-- ---------------about-------------- -->
-  <section id="about" class="container-fluid overflow-hidden">
-    <div class="row py-3" data-aos="zoom-out">
+  <section id="about" class="container">
+    <div class="row py-3">
       <div class="col-12 col-lg-5">
         <img class="border border-light img-fluid" src="img/about.png" alt="Company Image">
       </div>
@@ -120,8 +127,12 @@
   
 
   <!-- -----------------our services----------------- -->
-<section id="service" class="bg-warning overflow-hidden">
-  <div class="container py-3">
+  <!-- <section id="team" class="container py-3 overflow-hidden">
+    <div class="row"data-aos="flip-up">
+      <div class="col-12 text-center"> -->
+
+<section id="service" class="container-fluid py-5 bg-warning ">
+  <div class="row">
     <div class="col-12 text-center">
       <h2 class="display-6"><b>Our Service</b></h2>
       <p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Nisi, consequuntur!</p>
@@ -136,7 +147,7 @@
       <img src="img/star.png" alt="star">
     </div>
   </div>
-  <div class="container py-5 overflow-hidden">
+  <div class="container py-5 ">
     <div class="row justify-content-center mx-auto" data-aos="fade-up" data-aos-duration="3000">
       <div class="col-md-6 col-lg-3 mb-4">
         <div class="border p-3">
@@ -260,7 +271,7 @@
   </div>
 </section>
 <!-- Page content-->
-<section class="position-relative py-5 text-white bg-dark overflow-hidden"data-aos="flip-up">
+<section class="position-relative py-5 text-white bg-dark overflow-hidden">
   <div class="d-none d-dark-mode-block position-absolute top-0 start-0 w-100 h-100 " style="background-color: rgba(255,255,255, .02);"></div>
   <div class="container dark-mode position-relative zindex-2 py-5 mb-4 mb-sm-5">
     <div class="row pb-5 mb-2 mb-sm-0 mb-lg-3">
